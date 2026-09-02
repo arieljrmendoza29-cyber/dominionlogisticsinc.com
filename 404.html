@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#0F2C4C" />
+  <title>Page not found — Dominion Logistics, Inc.</title>
+
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <style>
+    .not-found {
+      min-height: calc(100vh - var(--nav-height));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 1.5rem;
+      background: var(--white);
+      position: relative;
+      overflow: hidden;
+    }
+    .not-found::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -5%;
+      right: -5%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--silver-soft) 20%, var(--silver-soft) 80%, transparent);
+    }
+    .not-found__inner {
+      position: relative;
+      z-index: 1;
+      max-width: 640px;
+      text-align: center;
+    }
+    .not-found__code {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      letter-spacing: 0.2em;
+      color: var(--silver);
+      margin-bottom: 1.5rem;
+      display: block;
+    }
+    .not-found__title {
+      font-size: clamp(2.25rem, 4.5vw, 3.5rem);
+      margin-bottom: 1rem;
+    }
+    .not-found__lead {
+      font-size: 1.1rem;
+      color: var(--charcoal);
+      margin-bottom: 2.25rem;
+    }
+    .not-found__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand" aria-label="Dominion Logistics, Inc. — home">
+        <img src="assets/images/logo.svg" alt="Dominion Logistics, Inc." />
+      </a>
+      <button class="nav__toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__menu" id="primary-nav">
+        <li><a class="nav__link" href="index.html">Home</a></li>
+        <li><a class="nav__link" href="about.html">About</a></li>
+        <li><a class="nav__link" href="services.html">Services</a></li>
+        <li><a class="nav__link" href="mission-vision.html">Mission &amp; Vision</a></li>
+        <li><a class="nav__link" href="testimonials.html">Testimonials</a></li>
+        <li class="nav__cta"><a class="btn btn--primary" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ============ 404 ============ -->
+  <section class="not-found">
+    <div class="not-found__inner">
+      <span class="not-found__code">Error 404 — Route not found</span>
+      <h1 class="not-found__title">This lane doesn't exist.</h1>
+      <p class="not-found__lead">
+        The page you're looking for may have moved, or the link that got you here might be broken. Let's get you back on route.
+      </p>
+      <div class="not-found__actions">
+        <a href="index.html" class="btn btn--primary">Return home <span class="btn__arrow">→</span></a>
+        <a href="contact.html" class="btn btn--secondary">Contact us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/images/logo-white.svg" alt="Dominion Logistics, Inc." />
+          <p class="footer__tagline">Engineering the digital backbone for modern supply chain and transport operations.</p>
+        </div>
+        <div class="footer__col">
+          <h5>Company</h5>
+          <ul class="footer__list">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="mission-vision.html">Mission &amp; Vision</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Platform</h5>
+          <ul class="footer__list">
+            <li><a href="services.html#dispatch-routing">Dispatch &amp; Routing</a></li>
+            <li><a href="services.html#tms-integration">TMS Integration</a></li>
+            <li><a href="services.html#driver-workflow">Driver Workflow</a></li>
+            <li><a href="services.html#analytics-dashboards">Analytics</a></li>
+            <li><a href="services.html">All services →</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span class="js-year">2026</span> Dominion Logistics, Inc. All rights reserved.</span>
+        <span><a href="mailto:info@dominionlogisticsinc.com">info@dominionlogisticsinc.com</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

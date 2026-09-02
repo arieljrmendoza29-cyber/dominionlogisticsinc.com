@@ -1,0 +1,39 @@
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Node (in case someone adds a build tool later)
+node_modules/
+.env
+.env.local
+.env.*.local
+
+# Build outputs (future-proofing)
+dist/
+build/
+.cache/
+
+# Deploy artifacts
+.netlify/
+.vercel/

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Update the sitemap URL to your live domain before publishing
+Sitemap: https://dominionlogisticsinc.com/sitemap.xml
