@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Dominion operator console preview showing active routes on a map, live dispatch queue with truck statuses, and key operational metrics.">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#F5F6F8"/>
+
+  <!-- Main app card -->
+  <rect x="24" y="24" width="752" height="552" rx="10" fill="#FFFFFF" stroke="#E5E8EC" stroke-width="1"/>
+
+  <!-- Top navigation bar -->
+  <rect x="24" y="24" width="752" height="52" rx="10" fill="#0F2C4C"/>
+  <rect x="24" y="60" width="752" height="16" fill="#0F2C4C"/>
+
+  <!-- Brand block -->
+  <g>
+    <path d="M 44 42 Q 62 34 80 42" stroke="#B4BCC4" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <text x="62" y="60" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="700" fill="#FFFFFF">Dominion</text>
+  </g>
+
+  <!-- Nav items -->
+  <g font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="500">
+    <text x="140" y="55" fill="#FFFFFF">Dispatch</text>
+    <text x="200" y="55" fill="#B4BCC4">Fleet</text>
+    <text x="248" y="55" fill="#B4BCC4">Analytics</text>
+    <text x="316" y="55" fill="#B4BCC4">Billing</text>
+    <!-- Active indicator under Dispatch -->
+    <rect x="140" y="62" width="42" height="2" fill="#B4BCC4"/>
+  </g>
+
+  <!-- Right side status -->
+  <rect x="700" y="40" width="52" height="20" rx="10" fill="#0A1F36"/>
+  <circle cx="712" cy="50" r="3" fill="#7FE6A8"/>
+  <text x="720" y="54" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="9" fill="#D9DDE1" letter-spacing="1">LIVE</text>
+
+  <!-- ==================== LEFT: MAP AREA ==================== -->
+  <g>
+    <rect x="48" y="100" width="430" height="380" rx="6" fill="#F5F6F8" stroke="#E5E8EC"/>
+    <text x="64" y="122" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="9" fill="#333F48" letter-spacing="1.5">ACTIVE ROUTES</text>
+    <text x="462" y="122" text-anchor="end" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="9" fill="#8891A0" letter-spacing="1">14 IN PROGRESS</text>
+
+    <!-- Map background — subtle grid -->
+    <defs>
+      <pattern id="mapGrid" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+        <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#E5E8EC" stroke-width="0.5"/>
+      </pattern>
+    </defs>
+    <rect x="64" y="132" width="398" height="336" fill="#FFFFFF" stroke="#E5E8EC" rx="4"/>
+    <rect x="64" y="132" width="398" height="336" fill="url(#mapGrid)"/>
+
+    <!-- Route arcs -->
+    <g fill="none" stroke-linecap="round">
+      <!-- Route 1 (active, thick navy) -->
+      <path d="M 100 200 Q 180 160 260 220 T 420 280" stroke="#0F2C4C" stroke-width="2.5"/>
+      <!-- Route 2 (planned, dashed) -->
+      <path d="M 120 400 Q 220 340 320 380 T 440 320" stroke="#333F48" stroke-width="1.5" stroke-dasharray="4,4"/>
+      <!-- Route 3 (secondary) -->
+      <path d="M 90 300 Q 200 260 300 320 T 420 400" stroke="#B4BCC4" stroke-width="1.5"/>
+      <!-- Route 4 (planned, dashed) -->
+      <path d="M 380 160 Q 260 200 200 240" stroke="#B4BCC4" stroke-width="1.5" stroke-dasharray="4,4"/>
+    </g>
+
+    <!-- Origin markers (circles) -->
+    <g>
+      <circle cx="100" cy="200" r="5" fill="#FFFFFF" stroke="#0F2C4C" stroke-width="2"/>
+      <circle cx="120" cy="400" r="4" fill="#FFFFFF" stroke="#333F48" stroke-width="1.5"/>
+      <circle cx="90" cy="300" r="4" fill="#FFFFFF" stroke="#B4BCC4" stroke-width="1.5"/>
+      <circle cx="380" cy="160" r="4" fill="#FFFFFF" stroke="#B4BCC4" stroke-width="1.5"/>
+    </g>
+
+    <!-- Destination pins -->
+    <g>
+      <!-- Primary destination -->
+      <circle cx="420" cy="280" r="10" fill="#0F2C4C"/>
+      <circle cx="420" cy="280" r="4" fill="#FFFFFF"/>
+      <!-- Secondary destinations -->
+      <circle cx="440" cy="320" r="6" fill="#333F48"/>
+      <circle cx="420" cy="400" r="6" fill="#B4BCC4"/>
+      <circle cx="200" cy="240" r="6" fill="#B4BCC4"/>
+    </g>
+
+    <!-- Truck marker (icon) mid-route -->
+    <g transform="translate(240, 200)">
+      <rect x="-8" y="-4" width="16" height="8" rx="1" fill="#0F2C4C"/>
+      <rect x="8" y="-2" width="6" height="6" rx="0.5" fill="#0F2C4C"/>
+      <circle cx="-4" cy="5" r="1.5" fill="#0F2C4C"/>
+      <circle cx="10" cy="5" r="1.5" fill="#0F2C4C"/>
+    </g>
+
+    <!-- Corner map controls -->
+    <g>
+      <rect x="422" y="140" width="28" height="28" rx="4" fill="#FFFFFF" stroke="#E5E8EC"/>
+      <text x="436" y="158" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="14" fill="#0F2C4C">+</text>
+      <rect x="422" y="172" width="28" height="28" rx="4" fill="#FFFFFF" stroke="#E5E8EC"/>
+      <text x="436" y="190" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="14" fill="#0F2C4C">−</text>
+    </g>
+  </g>
+
+  <!-- ==================== RIGHT: DISPATCH QUEUE ==================== -->
+  <g>
+    <rect x="492" y="100" width="260" height="380" rx="6" fill="#FFFFFF" stroke="#E5E8EC"/>
+    <text x="508" y="122" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="9" fill="#333F48" letter-spacing="1.5">DISPATCH QUEUE</text>
+    <text x="736" y="122" text-anchor="end" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="9" fill="#8891A0" letter-spacing="1">7 ACTIVE</text>
+
+    <!-- Divider -->
+    <line x1="508" y1="132" x2="736" y2="132" stroke="#E5E8EC" stroke-width="1"/>
+
+    <!-- Queue rows -->
+    <!-- Row 1 -->
+    <g>
+      <circle cx="518" cy="152" r="5" fill="#7FE6A8"/>
+      <text x="532" y="150" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="11" font-weight="500" fill="#0F2C4C">TRK-4821</text>
+      <text x="532" y="164" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#8891A0">Route NE-14 · 84 mi</text>
+      <text x="736" y="150" text-anchor="end" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="10" fill="#0F2C4C" font-weight="600">ON ROUTE</text>
+    </g>
+    <line x1="508" y1="180" x2="736" y2="180" stroke="#F5F6F8" stroke-width="1"/>
+
+    <!-- Row 2 -->
+    <g>
+      <circle cx="518" cy="198" r="5" fill="#7FE6A8"/>
+      <text x="532" y="196" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="11" font-weight="500" fill="#0F2C4C">TRK-4102</text>
+      <text x="532" y="210" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#8891A0">Route NE-09 · 122 mi</text>
+      <text x="736" y="196" text-anchor="end" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="10" fill="#0F2C4C" font-weight="600">ON ROUTE</text>
+    </g>
+    <line x1="508" y1="226" x2="736" y2="226" stroke="#F5F6F8" stroke-width="1"/>
+
+    <!-- Row 3 -->
+    <g>
+      <circle cx="518" cy="244" r="5" fill="#F5B94C"/>
+      <text x="532" y="242" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="11" font-weight="500" fill="#0F2C4C">TRK-3877</text>
+      <text x="532" y="256" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#8891A0">Terminal A · Loading</text>
+      <text x="736" y="242" text-anchor="end" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="10" fill="#333F48" font-weight="600">LOADING</text>
+    </g>
+    <line x1="508" y1="272" x2="736" y2="272" stroke="#F5F6F8" stroke-width="1"/>
+
+    <!-- Row 4 -->
+    <g>
+      <circle cx="518" cy="290" r="5" fill="#7FE6A8"/>
+      <text x="532" y="288" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="11" font-weight="500" fill="#0F2C4C">TRK-2244</text>
+      <text x="532" y="302" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#8891A0">Route MW-22 · 208 mi</text>
+      <text x="736" y="288" text-anchor="end" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="10" fill="#0F2C4C" font-weight="600">ON ROUTE</text>
+    </g>
+    <line x1="508" y1="318" x2="736" y2="318" stroke="#F5F6F8" stroke-width="1"/>
+
+    <!-- Row 5 -->
+    <g>
+      <circle cx="518" cy="336" r="5" fill="#B4BCC4"/>
+      <text x="532" y="334" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="11" font-weight="500" fill="#0F2C4C">TRK-1908</text>
+      <text x="532" y="348" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#8891A0">Delivered · 09:42</text>
+      <text x="736" y="334" text-anchor="end" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="10" fill="#8891A0" font-weight="600">DELIVERED</text>
+    </g>
+    <line x1="508" y1="364" x2="736" y2="364" stroke="#F5F6F8" stroke-width="1"/>
+
+    <!-- Row 6 -->
+    <g>
+      <circle cx="518" cy="382" r="5" fill="#7FE6A8"/>
+      <text x="532" y="380" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="11" font-weight="500" fill="#0F2C4C">TRK-5510</text>
+      <text x="532" y="394" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#8891A0">Route SE-03 · 61 mi</text>
+      <text x="736" y="380" text-anchor="end" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="10" fill="#0F2C4C" font-weight="600">ON ROUTE</text>
+    </g>
+    <line x1="508" y1="410" x2="736" y2="410" stroke="#F5F6F8" stroke-width="1"/>
+
+    <!-- Row 7 -->
+    <g>
+      <circle cx="518" cy="428" r="5" fill="#F5B94C"/>
+      <text x="532" y="426" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="11" font-weight="500" fill="#0F2C4C">TRK-4409</text>
+      <text x="532" y="440" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#8891A0">Terminal B · Loading</text>
+      <text x="736" y="426" text-anchor="end" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="10" fill="#333F48" font-weight="600">LOADING</text>
+    </g>
+  </g>
+
+  <!-- ==================== BOTTOM METRICS ROW ==================== -->
+  <g>
+    <!-- Metric 1 -->
+    <rect x="48" y="500" width="170" height="52" rx="6" fill="#F5F6F8" stroke="#E5E8EC"/>
+    <text x="60" y="518" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="9" fill="#333F48" letter-spacing="1.5">ON-TIME</text>
+    <text x="60" y="542" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" fill="#0F2C4C">96.8%</text>
+
+    <!-- Metric 2 -->
+    <rect x="228" y="500" width="170" height="52" rx="6" fill="#F5F6F8" stroke="#E5E8EC"/>
+    <text x="240" y="518" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="9" fill="#333F48" letter-spacing="1.5">MILES TODAY</text>
+    <text x="240" y="542" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" fill="#0F2C4C">14,208</text>
+
+    <!-- Metric 3 -->
+    <rect x="408" y="500" width="170" height="52" rx="6" fill="#F5F6F8" stroke="#E5E8EC"/>
+    <text x="420" y="518" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="9" fill="#333F48" letter-spacing="1.5">UTILIZATION</text>
+    <text x="420" y="542" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" fill="#0F2C4C">87.3%</text>
+
+    <!-- Metric 4 -->
+    <rect x="588" y="500" width="164" height="52" rx="6" fill="#0F2C4C"/>
+    <text x="600" y="518" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="9" fill="#B4BCC4" letter-spacing="1.5">FLEET HEALTH</text>
+    <text x="600" y="542" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">98/100</text>
+  </g>
+</svg>

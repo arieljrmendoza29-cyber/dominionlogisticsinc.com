@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="8" fill="#0F2C4C"/>
+  <path d="M 12 24 Q 32 12 52 24" fill="none" stroke="#B4BCC4" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="32" y="48" text-anchor="middle"
+        font-family="'Playfair Display', 'Times New Roman', serif"
+        font-weight="700" font-size="32"
+        fill="#FFFFFF">D</text>
+</svg>

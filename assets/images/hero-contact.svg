@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-label="Abstract route and waypoint illustration with a stylized inbound message card representing the start of a conversation with Dominion Logistics.">
+  <defs>
+    <pattern id="contactGrid" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.8" fill="#D9DDE1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="600" fill="#F5F6F8"/>
+  <rect width="900" height="600" fill="url(#contactGrid)" opacity="0.7"/>
+
+  <!-- Radiating hairline routes emanating from the destination -->
+  <g stroke="#B4BCC4" fill="none" stroke-linecap="round">
+    <path d="M 60 120 Q 250 180 640 340" stroke-width="1.2" stroke-dasharray="4,6"/>
+    <path d="M 80 480 Q 300 420 640 340" stroke-width="1.2" stroke-dasharray="4,6"/>
+    <path d="M 120 60 Q 400 100 640 340" stroke-width="1.5"/>
+    <path d="M 40 300 Q 300 300 640 340" stroke-width="1.5"/>
+    <path d="M 200 540 Q 420 480 640 340" stroke-width="1.2" stroke-dasharray="4,6"/>
+    <path d="M 840 60 Q 750 200 640 340" stroke-width="1.2" stroke-dasharray="4,6"/>
+    <path d="M 820 540 Q 760 450 640 340" stroke-width="1.5"/>
+  </g>
+
+  <!-- Origin waypoints (small circles) -->
+  <g>
+    <!-- Top-left origin -->
+    <circle cx="120" cy="60" r="8" fill="#FFFFFF" stroke="#0F2C4C" stroke-width="2"/>
+    <circle cx="120" cy="60" r="3" fill="#0F2C4C"/>
+
+    <!-- Left origin -->
+    <circle cx="40" cy="300" r="8" fill="#FFFFFF" stroke="#0F2C4C" stroke-width="2"/>
+    <circle cx="40" cy="300" r="3" fill="#0F2C4C"/>
+
+    <!-- Bottom-left origin -->
+    <circle cx="80" cy="480" r="6" fill="#FFFFFF" stroke="#0F2C4C" stroke-width="1.5"/>
+    <circle cx="80" cy="480" r="2" fill="#0F2C4C"/>
+
+    <!-- Bottom origin -->
+    <circle cx="200" cy="540" r="6" fill="#FFFFFF" stroke="#0F2C4C" stroke-width="1.5"/>
+    <circle cx="200" cy="540" r="2" fill="#0F2C4C"/>
+
+    <!-- Top-far origin -->
+    <circle cx="60" cy="120" r="6" fill="#FFFFFF" stroke="#0F2C4C" stroke-width="1.5"/>
+    <circle cx="60" cy="120" r="2" fill="#0F2C4C"/>
+
+    <!-- Top-right origin -->
+    <circle cx="840" cy="60" r="6" fill="#FFFFFF" stroke="#0F2C4C" stroke-width="1.5"/>
+    <circle cx="840" cy="60" r="2" fill="#0F2C4C"/>
+
+    <!-- Bottom-right origin -->
+    <circle cx="820" cy="540" r="8" fill="#FFFFFF" stroke="#0F2C4C" stroke-width="2"/>
+    <circle cx="820" cy="540" r="3" fill="#0F2C4C"/>
+  </g>
+
+  <!-- Central destination pin -->
+  <g>
+    <!-- Concentric rings -->
+    <circle cx="640" cy="340" r="70" fill="none" stroke="#B4BCC4" stroke-width="1" opacity="0.4"/>
+    <circle cx="640" cy="340" r="50" fill="none" stroke="#B4BCC4" stroke-width="1" opacity="0.6"/>
+
+    <!-- Pin -->
+    <circle cx="640" cy="340" r="30" fill="#0F2C4C"/>
+    <circle cx="640" cy="340" r="8" fill="#FFFFFF"/>
+    <circle cx="640" cy="340" r="3" fill="#0F2C4C"/>
+  </g>
+
+  <!-- Message / envelope card near center -->
+  <g transform="translate(480, 200)">
+    <!-- Card shadow -->
+    <rect x="2" y="4" width="240" height="120" rx="8" fill="#0F2C4C" opacity="0.06"/>
+    <!-- Card -->
+    <rect x="0" y="0" width="240" height="120" rx="8" fill="#FFFFFF" stroke="#E5E8EC" stroke-width="1"/>
+
+    <!-- Header -->
+    <rect x="0" y="0" width="240" height="32" rx="8" fill="#0F2C4C"/>
+    <rect x="0" y="20" width="240" height="12" fill="#0F2C4C"/>
+    <circle cx="14" cy="16" r="3" fill="#B4BCC4" opacity="0.5"/>
+    <circle cx="24" cy="16" r="3" fill="#B4BCC4" opacity="0.5"/>
+    <circle cx="34" cy="16" r="3" fill="#B4BCC4" opacity="0.5"/>
+    <text x="120" y="20" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="9" fill="#B4BCC4" letter-spacing="1.5">NEW INQUIRY</text>
+
+    <!-- Fields -->
+    <text x="16" y="52" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="7" fill="#8891A0" letter-spacing="1.5">FROM</text>
+    <rect x="16" y="56" width="140" height="8" rx="1" fill="#D9DDE1"/>
+
+    <text x="16" y="80" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="7" fill="#8891A0" letter-spacing="1.5">SUBJECT</text>
+    <rect x="16" y="84" width="200" height="8" rx="1" fill="#D9DDE1"/>
+
+    <text x="16" y="108" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="7" fill="#8891A0" letter-spacing="1.5">STATUS</text>
+    <rect x="60" y="102" width="72" height="12" rx="6" fill="#0F2C4C"/>
+    <circle cx="70" cy="108" r="2" fill="#7FE6A8"/>
+    <text x="80" y="112" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="7" fill="#D9DDE1" letter-spacing="1">RECEIVED</text>
+  </g>
+
+  <!-- Corner labels -->
+  <text x="40" y="30" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="10" fill="#8891A0" letter-spacing="2">INBOUND · GLOBAL</text>
+  <text x="860" y="30" text-anchor="end" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="10" fill="#8891A0" letter-spacing="2">RESPONSE · 24H</text>
+
+  <!-- Bottom hairline -->
+  <line x1="40" y1="580" x2="860" y2="580" stroke="#D9DDE1" stroke-width="1"/>
+  <circle cx="40" cy="580" r="3" fill="#0F2C4C"/>
+  <circle cx="860" cy="580" r="3" fill="#0F2C4C"/>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 180" role="img" aria-label="Dominion Logistics, Inc.">
+  <defs>
+    <linearGradient id="arcGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0F2C4C"/>
+      <stop offset="50%" stop-color="#B4BCC4"/>
+      <stop offset="100%" stop-color="#0F2C4C"/>
+    </linearGradient>
+  </defs>
+  <!-- Elegant arc above wordmark -->
+  <path d="M 60 40 Q 300 4 540 40" fill="none" stroke="url(#arcGrad)" stroke-width="3" stroke-linecap="round"/>
+  <!-- Main wordmark: serif DOMINION -->
+  <text x="300" y="115" text-anchor="middle"
+        font-family="'Playfair Display', 'Times New Roman', serif"
+        font-weight="700" font-size="76" letter-spacing="1"
+        fill="#0F2C4C">Dominion</text>
+  <!-- Divider dashes and sub-wordmark -->
+  <line x1="70" y1="150" x2="140" y2="150" stroke="#0F2C4C" stroke-width="1.5"/>
+  <text x="300" y="156" text-anchor="middle"
+        font-family="'Inter', 'Helvetica Neue', Arial, sans-serif"
+        font-weight="500" font-size="18" letter-spacing="8"
+        fill="#0F2C4C">LOGISTICS, INC.</text>
+  <line x1="460" y1="150" x2="530" y2="150" stroke="#0F2C4C" stroke-width="1.5"/>
+</svg>

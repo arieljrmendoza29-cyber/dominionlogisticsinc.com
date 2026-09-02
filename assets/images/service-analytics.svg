@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Operations analytics dashboard showing KPI metrics, revenue trend line chart, and lane profitability donut chart.">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#F5F6F8"/>
+
+  <!-- Main card -->
+  <rect x="24" y="24" width="752" height="552" rx="10" fill="#FFFFFF" stroke="#E5E8EC" stroke-width="1"/>
+
+  <!-- Header bar -->
+  <rect x="24" y="24" width="752" height="52" rx="10" fill="#0F2C4C"/>
+  <rect x="24" y="60" width="752" height="16" fill="#0F2C4C"/>
+
+  <!-- Nav dots -->
+  <circle cx="48" cy="50" r="4" fill="#B4BCC4" opacity="0.5"/>
+  <circle cx="62" cy="50" r="4" fill="#B4BCC4" opacity="0.5"/>
+  <circle cx="76" cy="50" r="4" fill="#B4BCC4" opacity="0.5"/>
+
+  <!-- Header text -->
+  <text x="108" y="55" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Operations Analytics</text>
+  <text x="280" y="55" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="10" fill="#B4BCC4" letter-spacing="1.5">LAST 30 DAYS</text>
+
+  <!-- Right side header status -->
+  <rect x="700" y="40" width="52" height="20" rx="10" fill="#0A1F36"/>
+  <circle cx="712" cy="50" r="3" fill="#7FE6A8"/>
+  <text x="720" y="54" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="9" fill="#D9DDE1" letter-spacing="1">LIVE</text>
+
+  <!-- ==================== KPI ROW ==================== -->
+  <!-- KPI 1: Total Miles -->
+  <g>
+    <rect x="48" y="100" width="164" height="88" rx="6" fill="#F5F6F8" stroke="#E5E8EC"/>
+    <text x="60" y="120" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="9" fill="#333F48" letter-spacing="1.5">TOTAL MILES</text>
+    <text x="60" y="152" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="700" fill="#0F2C4C">1.24M</text>
+    <text x="60" y="172" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="10" fill="#0F2C4C">▲ 12.4%</text>
+  </g>
+
+  <!-- KPI 2: On-Time % -->
+  <g>
+    <rect x="224" y="100" width="164" height="88" rx="6" fill="#F5F6F8" stroke="#E5E8EC"/>
+    <text x="236" y="120" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="9" fill="#333F48" letter-spacing="1.5">ON-TIME %</text>
+    <text x="236" y="152" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="700" fill="#0F2C4C">96.8%</text>
+    <text x="236" y="172" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="10" fill="#0F2C4C">▲ 2.1 pts</text>
+  </g>
+
+  <!-- KPI 3: Fleet Util -->
+  <g>
+    <rect x="400" y="100" width="164" height="88" rx="6" fill="#F5F6F8" stroke="#E5E8EC"/>
+    <text x="412" y="120" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="9" fill="#333F48" letter-spacing="1.5">FLEET UTIL.</text>
+    <text x="412" y="152" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="700" fill="#0F2C4C">87.3%</text>
+    <text x="412" y="172" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="10" fill="#333F48">▲ 4.8 pts</text>
+  </g>
+
+  <!-- KPI 4: Revenue/Mile -->
+  <g>
+    <rect x="576" y="100" width="164" height="88" rx="6" fill="#F5F6F8" stroke="#E5E8EC"/>
+    <text x="588" y="120" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="9" fill="#333F48" letter-spacing="1.5">REV / MILE</text>
+    <text x="588" y="152" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="700" fill="#0F2C4C">$2.41</text>
+    <text x="588" y="172" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="10" fill="#0F2C4C">▲ $0.18</text>
+  </g>
+
+  <!-- ==================== LINE CHART ==================== -->
+  <g>
+    <rect x="48" y="212" width="452" height="240" rx="6" fill="#FFFFFF" stroke="#E5E8EC"/>
+    <text x="64" y="234" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#0F2C4C">Revenue trend</text>
+    <text x="484" y="234" text-anchor="end" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="9" fill="#8891A0" letter-spacing="1">USD · WEEKLY</text>
+
+    <!-- Chart gridlines -->
+    <g stroke="#F5F6F8" stroke-width="1">
+      <line x1="72" y1="270" x2="484" y2="270"/>
+      <line x1="72" y1="310" x2="484" y2="310"/>
+      <line x1="72" y1="350" x2="484" y2="350"/>
+      <line x1="72" y1="390" x2="484" y2="390"/>
+    </g>
+    <!-- Y-axis labels -->
+    <text x="66" y="273" text-anchor="end" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="8" fill="#8891A0">400k</text>
+    <text x="66" y="313" text-anchor="end" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="8" fill="#8891A0">300k</text>
+    <text x="66" y="353" text-anchor="end" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="8" fill="#8891A0">200k</text>
+    <text x="66" y="393" text-anchor="end" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="8" fill="#8891A0">100k</text>
+
+    <!-- Line chart area -->
+    <path d="M 78 380 L 130 358 L 180 340 L 232 342 L 284 320 L 336 305 L 388 288 L 440 262 L 480 250 L 480 400 L 78 400 Z" fill="#0F2C4C" opacity="0.08"/>
+    <!-- Line chart line -->
+    <path d="M 78 380 L 130 358 L 180 340 L 232 342 L 284 320 L 336 305 L 388 288 L 440 262 L 480 250" stroke="#0F2C4C" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Data points -->
+    <g fill="#FFFFFF" stroke="#0F2C4C" stroke-width="2">
+      <circle cx="130" cy="358" r="3"/>
+      <circle cx="232" cy="342" r="3"/>
+      <circle cx="336" cy="305" r="3"/>
+      <circle cx="440" cy="262" r="3"/>
+    </g>
+    <!-- Highlighted latest -->
+    <circle cx="480" cy="250" r="5" fill="#0F2C4C"/>
+    <circle cx="480" cy="250" r="10" fill="none" stroke="#0F2C4C" stroke-width="1" opacity="0.3"/>
+
+    <!-- X-axis labels -->
+    <g font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="8" fill="#8891A0" text-anchor="middle">
+      <text x="80" y="424">W1</text>
+      <text x="132" y="424">W2</text>
+      <text x="184" y="424">W3</text>
+      <text x="236" y="424">W4</text>
+      <text x="288" y="424">W5</text>
+      <text x="340" y="424">W6</text>
+      <text x="392" y="424">W7</text>
+      <text x="444" y="424">W8</text>
+    </g>
+  </g>
+
+  <!-- ==================== DONUT CHART ==================== -->
+  <g>
+    <rect x="516" y="212" width="224" height="240" rx="6" fill="#FFFFFF" stroke="#E5E8EC"/>
+    <text x="532" y="234" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#0F2C4C">Lane profitability</text>
+
+    <!-- Donut segments (all as strokes on same circle) -->
+    <g fill="none" stroke-width="20">
+      <!-- Total circumference at r=48: 2πr ≈ 301.6 -->
+      <circle cx="628" cy="330" r="48" stroke="#0F2C4C" stroke-dasharray="140 302" stroke-dashoffset="0" transform="rotate(-90 628 330)"/>
+      <circle cx="628" cy="330" r="48" stroke="#333F48" stroke-dasharray="85 302" stroke-dashoffset="-140" transform="rotate(-90 628 330)"/>
+      <circle cx="628" cy="330" r="48" stroke="#B4BCC4" stroke-dasharray="50 302" stroke-dashoffset="-225" transform="rotate(-90 628 330)"/>
+      <circle cx="628" cy="330" r="48" stroke="#D9DDE1" stroke-dasharray="27 302" stroke-dashoffset="-275" transform="rotate(-90 628 330)"/>
+    </g>
+    <!-- Center label -->
+    <text x="628" y="326" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="9" fill="#8891A0" letter-spacing="1">MARGIN</text>
+    <text x="628" y="346" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" fill="#0F2C4C">24.6%</text>
+
+    <!-- Legend -->
+    <g font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="9">
+      <rect x="532" y="402" width="8" height="8" fill="#0F2C4C"/>
+      <text x="546" y="410" fill="#333F48">Northeast</text>
+      <text x="720" y="410" text-anchor="end" fill="#0F2C4C" font-weight="600">46%</text>
+
+      <rect x="532" y="420" width="8" height="8" fill="#333F48"/>
+      <text x="546" y="428" fill="#333F48">Midwest</text>
+      <text x="720" y="428" text-anchor="end" fill="#0F2C4C" font-weight="600">28%</text>
+
+      <rect x="532" y="438" width="8" height="8" fill="#B4BCC4"/>
+      <text x="546" y="446" fill="#333F48">Southeast</text>
+      <text x="720" y="446" text-anchor="end" fill="#0F2C4C" font-weight="600">17%</text>
+    </g>
+  </g>
+
+  <!-- ==================== BOTTOM ROW ==================== -->
+  <g>
+    <rect x="48" y="476" width="692" height="76" rx="6" fill="#F5F6F8" stroke="#E5E8EC"/>
+    <text x="64" y="497" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="9" fill="#333F48" letter-spacing="1.5">DRIVER PERFORMANCE · TOP 5</text>
+
+    <!-- Horizontal bar chart -->
+    <g font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="9" fill="#333F48">
+      <text x="64" y="518">D-4821</text>
+      <rect x="120" y="510" width="180" height="8" rx="2" fill="#0F2C4C"/>
+      <text x="720" y="518" text-anchor="end" fill="#0F2C4C" font-weight="600">98.4</text>
+
+      <text x="64" y="536">D-4102</text>
+      <rect x="120" y="528" width="164" height="8" rx="2" fill="#0F2C4C" opacity="0.85"/>
+      <text x="720" y="536" text-anchor="end" fill="#0F2C4C" font-weight="600">96.1</text>
+    </g>
+  </g>
+</svg>
